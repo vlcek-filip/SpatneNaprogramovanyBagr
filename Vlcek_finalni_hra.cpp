@@ -9,7 +9,7 @@ int mana;
 int maxmana;
 string class;
 
-TEST 1235547
+TEST 12355476778
 
 int main(){
 
