@@ -98,6 +98,7 @@ cout << "4) Vylepsit utok/schopnosti" << endl;
 cout << "5) Opustit" << endl;
 cout << "Jakou akci chcete vykonat?: ";
 cin >> akce;
+cout << endl;
 
 if (akce == 1){
     cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
