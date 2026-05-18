@@ -137,31 +137,14 @@ if (akce == 1){
         cout << "Jakou akci chcete vykonat?: ";
         cin >> akce;
     }
-}else if (akce == 2){
-    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
-    cin >> pokracakce;
-    if (pokracakce == "ano"){
-        if (zlato >= 10){
-                zlato = zlato - 10;
-                cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 10){
-            akce = 0;
-            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou akci chcete vykonat?: ";
-            cin >> akce;
-        }
-    }else{
-        cout << "Jakou akci chcete vykonat?: ";
-        cin >> akce;
-    }
 }else if (akce == 3){
-    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    cout << "Tato akce stoji 20 zlata, chcete pokracovat?: ";
     cin >> pokracakce;
     if (pokracakce == "ano"){
-        if (zlato >= 10){
-                zlato = zlato - 10;
+        if (zlato >= 20){
+                zlato = zlato - 20;
                 cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 10){
+        }else if (zlato < 20){
             akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
@@ -189,6 +172,5 @@ if (akce == 1){
         cin >> akce;
     }
 }
-
 
 }
