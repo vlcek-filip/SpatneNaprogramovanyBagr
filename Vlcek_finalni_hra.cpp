@@ -8,6 +8,7 @@ int zlato;
 int mana;
 int maxmana;
 string class;
+string volbaclass;
 
 int main(){
 
@@ -56,6 +57,10 @@ if (class == 'Paladin'){
         mana = 1;
 
 
-
+    }else{
+        cout << "neplatny vyber, vyberte znovu" << endl;
     }
+    
+    cout << "chcete tuto class vybrat? " << endl;
+    cin >> volbaclass
 } 
