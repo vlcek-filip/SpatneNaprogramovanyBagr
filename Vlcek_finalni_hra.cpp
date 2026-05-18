@@ -99,10 +99,10 @@ cout << "5 - Opustit" << endl;
 cin >> akce;
 
 if (akce == 1){
-    cout << "Tato akce stoji 5 zlata" << endl;
+    cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
     if (pokracakce == "ano"){
         if (zlato > 5){
-
+                
             akce = 0;
         }
         
