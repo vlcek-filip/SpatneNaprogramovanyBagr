@@ -10,10 +10,12 @@ int mana;
 int maxmana;
 string classa;
 string volbaclassy;
+int vyber;
 
 int main(){
 
 cout << "-----------VITEJ VE HRE-----------" << endl;
+while (!vyber){
 cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
 cin >> classa;
 cout << endl;
@@ -71,10 +73,23 @@ if (classa == "Paladin"){
         cout << "neplatny vyber, vyberte znovu" << endl;
     }
 
-    cout << "chcete tuto class vybrat? " << endl;
+    cout << "chcete tuto class vybrat? ";
     cin >> volbaclassy;
 
     if (volbaclassy == "ano"){
         cout << "Class " << classa << " vybrana" << endl;
+        vyber = 1;
+        cout << "------------------------------------------------------------------" << endl;
     }
+}
+
+
+
+
+
+
+
+
+
+
 }
