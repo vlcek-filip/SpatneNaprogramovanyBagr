@@ -127,5 +127,72 @@ if (akce == 1){
             cin >> akce;
         }
     }
+}else if (akce == 2){
+    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    if (pokracakce == "ano"){
+        if (zlato >= 10){
+                zlato = zlato - 10;
+                cout << "Nyni mate " << " zlata" << endl;
+        }else if (zlato < 10){
+            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
+            cout << "Jakou akci chcete vykonat?: ";
+            cin >> akce;
+        }
+    }
+}else if (akce == 3){
+    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    if (pokracakce == "ano"){
+        if (zlato >= 10){
+                zlato = zlato - 10;
+                cout << "Nyni mate " << " zlata" << endl;
+        }else if (zlato < 10){
+            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
+            cout << "Jakou akci chcete vykonat?: ";
+            cin >> akce;
+        }
+    }
+}else if (akce == 4){
+    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    if (pokracakce == "ano"){
+        if (zlato >= 10){
+                zlato = zlato - 10;
+                cout << "Nyni mate " << " zlata" << endl;
+        }else if (zlato < 10){
+            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
+            cout << "Jakou akci chcete vykonat?: ";
+            cin >> akce;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
