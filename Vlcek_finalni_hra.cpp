@@ -103,7 +103,7 @@ if (akce == 1){
     if (pokracakce == "ano"){
         if (zlato >= 5){
                 zlato = zlato - 5;
-                "Nyni mate " << " zlata";
+                cout << "Nyni mate " << " zlata" << endl;
             akce = 0;
         }
         
