@@ -15,6 +15,7 @@ int vyber;
 int main(){
 
 cout << "-----------VITEJ VE HRE-----------" << endl;
+// POZNAMKA: nevedel jak jsem mel dat ze kdyz vyber nema hodnotu, tak aby ten cyklus bezel dokud int vyber nebude mit prirazenou hodnotu, zeptal jsem se na to AI.
 while (!vyber){
 cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
 cin >> classa;
