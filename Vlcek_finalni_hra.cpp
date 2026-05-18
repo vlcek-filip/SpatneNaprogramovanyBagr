@@ -49,8 +49,11 @@ if (class == 'Paladin'){
     }else if (class == 'Warlock'){
     cout << "Vas vyber: Warlock" << endl;
         maxzivoty = 7;
+    cout << "zivoty = 7/7" << endl;
         zivoty = 7;
+    cout << "utok = 4" << endl;
         utok = 4;
+    cout << "mana = 1" << endl;
         mana = 1;
 
 
