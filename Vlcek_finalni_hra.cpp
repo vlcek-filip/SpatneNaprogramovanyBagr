@@ -104,13 +104,18 @@ if (akce == 1){
         if (zlato >= 5){
                 zlato = zlato - 5;
                 cout << "Nyni mate " << " zlata" << endl;
-            akce = 0;
+        }else if (zlato < 5){
+            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
         }
-        
-            
     }
+}else if (akce == 2){
+    cout << ""
 }
-cout << "----------------------" << endl;
+
+            
+
+
+
 
 
 
