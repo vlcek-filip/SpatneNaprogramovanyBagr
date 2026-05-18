@@ -63,4 +63,8 @@ if (class == 'Paladin'){
     
     cout << "chcete tuto class vybrat? " << endl;
     cin >> volbaclassy;
+    
+    if (volbaclassy = 'ano'){
+        cout << "Class " << class << " vybrana" << endl;
+    }
 } 
