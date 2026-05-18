@@ -23,6 +23,7 @@ cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
 cin >> classa;
 cout << endl;
 
+
 if (classa == "Paladin"){
     cout << "Vas vyber: " << classa << endl;
         maxzivoty = 5;
@@ -86,6 +87,7 @@ if (classa == "Paladin"){
     }
 }
 
+
 cout << endl;
 cout << "----------------------" << endl;
 cout << "Lokace: Vesnice" << endl;
@@ -100,6 +102,7 @@ cout << "Jakou akci chcete vykonat?: ";
 cin >> akce;
 cout << endl;
 
+
 if (akce == 1){
     cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
     if (pokracakce == "ano"){
@@ -108,6 +111,8 @@ if (akce == 1){
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 5){
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
+            cout << "Jakou akci chcete vykonat?: ";
+            cin >> akce;
         }
     }
 }else if (akce == 2){
@@ -118,18 +123,9 @@ if (akce == 1){
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 10){
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou"
+            cout << "Jakou akci chcete vykonat?: ";
+            cin >> akce;
         }
     }
-            
-
-
-
-
-
-
-
-
-
-
+}
 }
