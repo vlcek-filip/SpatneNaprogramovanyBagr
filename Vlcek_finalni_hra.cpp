@@ -116,6 +116,9 @@ if (akce == 1){
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
         }
+    }else{
+        cout << "Jakou akci chcete vykonat?: ";
+        cin >> akce;
     }
 }else if (akce == 2){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
@@ -130,6 +133,9 @@ if (akce == 1){
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
         }
+    }else{
+        cout << "Jakou akci chcete vykonat?: ";
+        cin >> akce;
     }
 }else if (akce == 2){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
@@ -144,6 +150,9 @@ if (akce == 1){
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
         }
+    }else{
+        cout << "Jakou akci chcete vykonat?: ";
+        cin >> akce;
     }
 }else if (akce == 3){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
@@ -158,6 +167,9 @@ if (akce == 1){
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
         }
+    }else{
+        cout << "Jakou akci chcete vykonat?: ";
+        cin >> akce;
     }
 }else if (akce == 4){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
@@ -172,37 +184,11 @@ if (akce == 1){
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
         }
+    }else{
+        cout << "Jakou akci chcete vykonat?: ";
+        cin >> akce;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
