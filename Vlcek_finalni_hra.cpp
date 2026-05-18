@@ -110,6 +110,7 @@ if (akce == 1){
                 zlato = zlato - 5;
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 5){
+            akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
@@ -122,6 +123,7 @@ if (akce == 1){
                 zlato = zlato - 10;
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 10){
+            akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
@@ -134,6 +136,7 @@ if (akce == 1){
                 zlato = zlato - 10;
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 10){
+            akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
@@ -146,6 +149,7 @@ if (akce == 1){
                 zlato = zlato - 10;
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 10){
+            akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
@@ -158,6 +162,7 @@ if (akce == 1){
                 zlato = zlato - 10;
                 cout << "Nyni mate " << " zlata" << endl;
         }else if (zlato < 10){
+            akce = 0;
             cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
             cout << "Jakou akci chcete vykonat?: ";
             cin >> akce;
