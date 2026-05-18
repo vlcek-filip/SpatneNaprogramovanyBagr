@@ -62,5 +62,5 @@ if (class == 'Paladin'){
     }
     
     cout << "chcete tuto class vybrat? " << endl;
-    cin >> volbaclass
+    cin >> volbaclassy;
 } 
