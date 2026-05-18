@@ -101,14 +101,14 @@ cin >> akce;
 if (akce == 1){
     cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
     if (pokracakce == "ano"){
-        if (zlato > 5){
-                
+        if (zlato >= 5){
+                zlato = zlato - 5;
+                "Nyni mate " << " zlata";
             akce = 0;
         }
         
             
     }
-    akce = 0;
 }
 cout << "----------------------" << endl;
 
