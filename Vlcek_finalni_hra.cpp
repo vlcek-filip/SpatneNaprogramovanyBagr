@@ -105,6 +105,7 @@ cout << endl;
 
 if (akce == 1){
     cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
+    cin >> pokracakce;
     if (pokracakce == "ano"){
         if (zlato >= 5){
                 zlato = zlato - 5;
@@ -118,6 +119,7 @@ if (akce == 1){
     }
 }else if (akce == 2){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    cin >> pokracakce;
     if (pokracakce == "ano"){
         if (zlato >= 10){
                 zlato = zlato - 10;
@@ -131,6 +133,7 @@ if (akce == 1){
     }
 }else if (akce == 2){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    cin >> pokracakce;
     if (pokracakce == "ano"){
         if (zlato >= 10){
                 zlato = zlato - 10;
@@ -144,6 +147,7 @@ if (akce == 1){
     }
 }else if (akce == 3){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    cin >> pokracakce;
     if (pokracakce == "ano"){
         if (zlato >= 10){
                 zlato = zlato - 10;
@@ -157,6 +161,7 @@ if (akce == 1){
     }
 }else if (akce == 4){
     cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    cin >> pokracakce;
     if (pokracakce == "ano"){
         if (zlato >= 10){
                 zlato = zlato - 10;
