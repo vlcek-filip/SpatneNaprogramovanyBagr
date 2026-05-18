@@ -11,10 +11,12 @@ int maxmana;
 string classa;
 string volbaclassy;
 int vyber;
+int akce;
+string pokracakce;
 
 int main(){
 
-cout << "-----------VITEJ VE HRE-----------" << endl;
+cout << "-=-=-=-=-=-VITEJ VE HRE-=-=-=-=-=-" << endl;
 // POZNAMKA: nevedel jak jsem mel dat ze kdyz vyber nema hodnotu, tak aby ten cyklus bezel dokud int vyber nebude mit prirazenou hodnotu, zeptal jsem se na to AI.
 while (!vyber){
 cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
@@ -84,8 +86,31 @@ if (classa == "Paladin"){
     }
 }
 
+cout << endl;
+cout << "----------------------" << endl;
+cout << "Lokace: Vesnice" << endl;
+cout << endl;
+cout << "Akce co muzete ve vesnici delat:" << endl;
+cout << "1) Doplnit zivoty" << endl;
+cout << "2) Vylepsit maximalni zivoty" << endl;
+cout << "3) Vylepsit maximalni manu" << endl;
+cout << "4) Vylepsit utok/schopnosti" << endl;
+cout << "5 - Opustit" << endl;
+cin >> akce;
 
+if (akce == 1){
+    cout << "Tato akce stoji 5 zlata" << endl;
+    if (pokracakce == "ano"){
+        if (zlato > 5){
 
+            akce = 0;
+        }
+        
+            
+    }
+    akce = 0;
+}
+cout << "----------------------" << endl;
 
 
 
