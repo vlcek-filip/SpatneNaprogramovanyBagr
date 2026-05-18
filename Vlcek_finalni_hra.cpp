@@ -19,6 +19,7 @@ cin >> class;
 if (class == 'Paladin'){
     cout << "Vas vyber: Paladin" << endl;
         maxzivoty = 5;
+    cout << "----------------------" << endl;
     cout << "zivoty = 5/5" << endl;
         zivoty = 5;
     cout << "utok = 3" << endl;
