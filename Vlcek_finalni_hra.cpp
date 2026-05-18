@@ -27,10 +27,11 @@ if (class == 'Paladin'){
 
     }else if (class == 'Lovec'){
     cout << "Vas vyber: Lovec" << endl;
-    cout << "maxzivoty = 5" << endl;
+    
         maxzivoty = 4;
-    cout << ""
+    cout << "zivoty = 4/4" << endl;
         zivoty = 4;
+    cout << "utok = 3" << endl;
         utok = 4;
         mana = 2;
 
