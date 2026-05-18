@@ -9,7 +9,6 @@ int mana;
 int maxmana;
 string class;
 
-
 int main(){
 
 cout << "-----------VITEJ VE HRE-----------" << endl;
