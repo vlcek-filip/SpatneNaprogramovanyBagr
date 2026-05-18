@@ -8,7 +8,7 @@ int zlato;
 int mana;
 int maxmana;
 string class;
-string volbaclass;
+string volbaclassy;
 
 int main(){
 
