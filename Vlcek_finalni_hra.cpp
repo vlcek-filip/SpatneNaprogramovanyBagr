@@ -95,7 +95,7 @@ cout << "1) Doplnit zivoty" << endl;
 cout << "2) Vylepsit maximalni zivoty" << endl;
 cout << "3) Vylepsit maximalni manu" << endl;
 cout << "4) Vylepsit utok/schopnosti" << endl;
-cout << "5 - Opustit" << endl;
+cout << "5) - Opustit" << endl;
 cin >> akce;
 
 if (akce == 1){
