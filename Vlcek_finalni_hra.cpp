@@ -95,7 +95,8 @@ cout << "1) Doplnit zivoty" << endl;
 cout << "2) Vylepsit maximalni zivoty" << endl;
 cout << "3) Vylepsit maximalni manu" << endl;
 cout << "4) Vylepsit utok/schopnosti" << endl;
-cout << "5) - Opustit" << endl;
+cout << "5) Opustit" << endl;
+cout << "Jakou akci chcete vykonat?: ";
 cin >> akce;
 
 if (akce == 1){
@@ -109,9 +110,16 @@ if (akce == 1){
         }
     }
 }else if (akce == 2){
-    cout << ""
-}
-
+    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
+    if (pokracakce == "ano"){
+        if (zlato >= 10){
+                zlato = zlato - 10;
+                cout << "Nyni mate " << " zlata" << endl;
+        }else if (zlato < 10){
+            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
+            cout << "Jakou"
+        }
+    }
             
 
 
