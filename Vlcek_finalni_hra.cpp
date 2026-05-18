@@ -41,8 +41,9 @@ if (class == 'Paladin'){
        maxzivoty = 3;
     cout << "zivoty = 3/3" << endl;
        zivoty = 3;
-    cout << "" << endl;
+    cout << "utok = 3" << endl;
        utok = 4;
+    cout << "mana = 10" << endl;
        mana = 10;
 
     }else if (class == 'Warlock'){
