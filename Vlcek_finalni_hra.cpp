@@ -35,7 +35,7 @@ if (class == 'Paladin'){
         mana = 2;
 
     }else if (class == 'Mag'){
-    cout << "Vas vyber: Paladin" << endl;
+    cout << "Vas vyber: Mag" << endl;
        maxzivoty = 3;
        zivoty = 3;
        utok = 4;
