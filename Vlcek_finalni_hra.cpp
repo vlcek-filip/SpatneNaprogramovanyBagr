@@ -5,20 +5,21 @@ using namespace std;
 int zivoty;
 int maxzivoty;
 int zlato;
+int utok;
 int mana;
 int maxmana;
-string class;
+string classa;
 string volbaclassy;
 
 int main(){
 
 cout << "-----------VITEJ VE HRE-----------" << endl;
-cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): "
-cin >> class; 
+cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
+cin >> classa;
 cout << endl;
 
-if (class == 'Paladin'){
-    cout << "Vas vyber: Paladin" << endl;
+if (classa == "Paladin"){
+    cout << "Vas vyber: " << classa << endl;
         maxzivoty = 5;
     cout << "----------------------" << endl;
     cout << "zivoty = 5/5" << endl;
@@ -27,9 +28,10 @@ if (class == 'Paladin'){
         utok = 3;
     cout << "mana = 5" << endl;
         mana = 5;
+    cout << "----------------------" << endl;
 
-    }else if (class == 'Lovec'){
-    cout << "Vas vyber: Lovec" << endl;
+    }else if (classa == "Lovec"){
+    cout << "Vas vyber: " << classa << endl;
         maxzivoty = 4;
     cout << "----------------------" << endl;
     cout << "zivoty = 4/4" << endl;
@@ -38,9 +40,10 @@ if (class == 'Paladin'){
         utok = 4;
     cout << "mana = 2" << endl;
         mana = 2;
+    cout << "----------------------" << endl;
 
-    }else if (class == 'Mag'){
-    cout << "Vas vyber: Mag" << endl;
+    }else if (classa == "Mag"){
+    cout << "Vas vyber: " << classa << endl;
        maxzivoty = 3;
     cout << "----------------------" << endl;
     cout << "zivoty = 3/3" << endl;
@@ -49,9 +52,10 @@ if (class == 'Paladin'){
        utok = 4;
     cout << "mana = 10" << endl;
        mana = 10;
+    cout << "----------------------" << endl;
 
-    }else if (class == 'Warlock'){
-    cout << "Vas vyber: Warlock" << endl;
+    }else if (classa == "Warlock"){
+    cout << "Vas vyber: " << classa << endl;
         maxzivoty = 7;
     cout << "----------------------" << endl;
     cout << "zivoty = 7/7" << endl;
@@ -60,16 +64,17 @@ if (class == 'Paladin'){
         utok = 4;
     cout << "mana = 1" << endl;
         mana = 1;
+    cout << "----------------------" << endl;
 
 
     }else{
         cout << "neplatny vyber, vyberte znovu" << endl;
     }
-    
+
     cout << "chcete tuto class vybrat? " << endl;
     cin >> volbaclassy;
-    
-    if (volbaclassy = 'ano'){
-        cout << "Class " << class << " vybrana" << endl;
+
+    if (volbaclassy == "ano"){
+        cout << "Class " << classa << " vybrana" << endl;
     }
-} 
+}
