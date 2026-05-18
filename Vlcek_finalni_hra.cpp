@@ -33,11 +33,13 @@ if (class == 'Paladin'){
         zivoty = 4;
     cout << "utok = 3" << endl;
         utok = 4;
+    cout << "mana = 2" << endl;
         mana = 2;
 
     }else if (class == 'Mag'){
     cout << "Vas vyber: Mag" << endl;
        maxzivoty = 3;
+    
        zivoty = 3;
        utok = 4;
        mana = 10;
