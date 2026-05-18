@@ -13,8 +13,9 @@ string volbaclassy;
 int main(){
 
 cout << "-----------VITEJ VE HRE-----------" << endl;
-cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock)" << endl;
+cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): "
 cin >> class; 
+cout << endl;
 
 if (class == 'Paladin'){
     cout << "Vas vyber: Paladin" << endl;
@@ -30,6 +31,7 @@ if (class == 'Paladin'){
     }else if (class == 'Lovec'){
     cout << "Vas vyber: Lovec" << endl;
         maxzivoty = 4;
+    cout << "----------------------" << endl;
     cout << "zivoty = 4/4" << endl;
         zivoty = 4;
     cout << "utok = 3" << endl;
@@ -40,6 +42,7 @@ if (class == 'Paladin'){
     }else if (class == 'Mag'){
     cout << "Vas vyber: Mag" << endl;
        maxzivoty = 3;
+    cout << "----------------------" << endl;
     cout << "zivoty = 3/3" << endl;
        zivoty = 3;
     cout << "utok = 3" << endl;
@@ -50,6 +53,7 @@ if (class == 'Paladin'){
     }else if (class == 'Warlock'){
     cout << "Vas vyber: Warlock" << endl;
         maxzivoty = 7;
+    cout << "----------------------" << endl;
     cout << "zivoty = 7/7" << endl;
         zivoty = 7;
     cout << "utok = 4" << endl;
