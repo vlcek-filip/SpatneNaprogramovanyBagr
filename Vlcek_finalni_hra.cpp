@@ -111,7 +111,22 @@ cout << endl;
 
 // Monstrum
 void M(){
+int zivotyMonstra = 100;
+int utokMonstra = 5;
+cout << "----------------------" << endl;
+cout << "Lokace: Souboj s monstrem"
+cout << "----------------------" << endl;
+cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << endl;
+cout << classa ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
+cout << "Monstrum: Cha! Tak si to rozdame." << endl;
 
+while (zivoty > 0 or zivotyMonstra > 0){
+    cout << "----------------------" << endl;
+    cout << "Zivoty Monstra: " << zivotyMonstra << "/" << zivotyMonstra << endl;
+    cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
+    cout << "----------------------" << endl;
+    cout << ""
+}
 }
 // ------------------------------------------------------------------
 
