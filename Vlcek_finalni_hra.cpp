@@ -111,6 +111,7 @@ cout << endl;
 
 // Monstrum
 void M(){
+int maxzivotyMonstra
 int zivotyMonstra = 100;
 int utokMonstra = 5;
 cout << "----------------------" << endl;
@@ -118,7 +119,7 @@ cout << "Lokace: Souboj s monstrem" << endl;
 cout << "Utok Monstra: -5 zivotu" << endl;
 cout << "----------------------" << endl;
 cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << endl;
-cout << classa ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
+cout << classa << ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
 cout << "Monstrum: Cha! Tak si to rozdame." << endl;
 
 while (zivoty > 0 or zivotyMonstra > 0){
@@ -127,10 +128,26 @@ while (zivoty > 0 or zivotyMonstra > 0){
     cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
     cout << "----------------------" << endl;
     cout << "Monstrum vam chce zasadit zasah, co udelate?" << endl;
-    cout << "1) Zautocite nazpet";
-    cout << "2) Uhnete (Monstrum si nabije utok, ktery dava 2x vice poskozeni)";
+    cout << "1) Zautocite na monstrum";
+    cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)";
     cout << "Vase volba: ";
-    cout <<
+    cin >> volba;
+    if (volba == 1){
+        cout << "Utok monstru ubral " << utok << "zivotu" << endl;
+        cout << "----------------------" << endl;
+        cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
+        cout << "----------------------" << endl;
+        cout << "Monstrum se na vas nahnalo" << endl;
+        cout << "1) Zautocite na monstrum (25% sance ze se utok na monstrum podari)";
+        cout << "2) Uhnete (50% sance ze se uhnuti pred monstrem podari)";
+        cout << "Vase volba: ";
+        cin >> volba;
+    }
+    if (volba == 2){
+        cout << "Monstrum vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
+        utokMonstra *= 2;
+    }
 }
 }
 // ------------------------------------------------------------------
