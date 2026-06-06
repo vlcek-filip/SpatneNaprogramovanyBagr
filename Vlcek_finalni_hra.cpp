@@ -114,7 +114,8 @@ void M(){
 int zivotyMonstra = 100;
 int utokMonstra = 5;
 cout << "----------------------" << endl;
-cout << "Lokace: Souboj s monstrem"
+cout << "Lokace: Souboj s monstrem" << endl;
+cout << "Utok Monstra: -5 zivotu" << endl;
 cout << "----------------------" << endl;
 cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << endl;
 cout << classa ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
@@ -125,7 +126,11 @@ while (zivoty > 0 or zivotyMonstra > 0){
     cout << "Zivoty Monstra: " << zivotyMonstra << "/" << zivotyMonstra << endl;
     cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
     cout << "----------------------" << endl;
-    cout << ""
+    cout << "Monstrum vam chce zasadit zasah, co udelate?" << endl;
+    cout << "1) Zautocite nazpet";
+    cout << "2) Uhnete (Monstrum si nabije utok, ktery dava 2x vice poskozeni)";
+    cout << "Vase volba: ";
+    cout <<
 }
 }
 // ------------------------------------------------------------------
@@ -167,50 +172,50 @@ cout << "----------------------" << endl;
 
 if (classa == "Paladin"){
     cout << "Vas vyber: " << classa << endl;
-        maxzivoty = 5;
+        int maxzivoty = 5;
     cout << "----------------------" << endl;
     cout << "zivoty = 5/5" << endl;
-        zivoty = 5;
+        int zivoty = 5;
     cout << "utok = 3" << endl;
-        utok = 3;
+        int utok = 3;
     cout << "mana = 5" << endl;
-        mana = 5;
+        int mana = 5;
     cout << "----------------------" << endl;
 
     }else if (classa == "Lovec"){
     cout << "Vas vyber: " << classa << endl;
-        maxzivoty = 4;
+        int maxzivoty = 4;
     cout << "----------------------" << endl;
     cout << "zivoty = 4/4" << endl;
-        zivoty = 4;
+        int zivoty = 4;
     cout << "utok = 3" << endl;
-        utok = 4;
+        int utok = 4;
     cout << "mana = 2" << endl;
-        mana = 2;
+        int mana = 2;
     cout << "----------------------" << endl;
 
     }else if (classa == "Mag"){
     cout << "Vas vyber: " << classa << endl;
-       maxzivoty = 3;
+        int maxzivoty = 3;
     cout << "----------------------" << endl;
     cout << "zivoty = 3/3" << endl;
-       zivoty = 3;
+        int zivoty = 3;
     cout << "utok = 3" << endl;
-       utok = 4;
+        int utok = 4;
     cout << "mana = 10" << endl;
-       mana = 10;
+        int mana = 10;
     cout << "----------------------" << endl;
 
     }else if (classa == "Warlock"){
     cout << "Vas vyber: " << classa << endl;
-        maxzivoty = 7;
+        int maxzivoty = 7;
     cout << "----------------------" << endl;
     cout << "zivoty = 7/7" << endl;
-        zivoty = 7;
+        int zivoty = 7;
     cout << "utok = 4" << endl;
-        utok = 4;
+        int utok = 4;
     cout << "mana = 1" << endl;
-        mana = 1;
+        int mana = 1;
     cout << "----------------------" << endl;
 
 
@@ -230,7 +235,7 @@ if (classa == "Paladin"){
 
 
 V();
-
+M();
 
 
 
