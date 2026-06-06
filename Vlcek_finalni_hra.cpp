@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -42,6 +43,7 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 5;
                 cout << "Zivoty doplneny. Nyni mate " << zlato << " zlata." << endl;
+                cout << "Zivoty: " << zivoty << "/" << zivoty;
                 }
             }else{
                 cout << "Nemate dostatek zlata!" << endl;
@@ -55,6 +57,9 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 10;
                 cout << "Max. zivoty zvyseny. Nyni mate " << zlato << " zlata." << endl;
+                int bonus = rand() % 9 + 1;
+                maxzivoty += bonus;
+                cout << "Zivoty: " << zivoty << "/" << maxzivoty;
                 }
             }else{
                 cout << "Nemate dostatek zlata!" << endl;
@@ -68,6 +73,8 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 20;
                 cout << "Max. mana zvysena. Nyni mate " << zlato << " zlata." << endl;
+                int bonus = rand() % 9 + 1;
+                maxmana += bonus;
                 }
             }else{
                 cout << "Nemate dostatek zlata!" << endl;
@@ -81,6 +88,9 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 10;
                 cout << "Utok vylepsen. Nyni mate " << zlato << " zlata." << endl;
+                int bonus = rand() % 9 + 1;
+                utok += bonus;
+                cout << "Poskozeni utokem: " << utok << endl;
                 }
             }else{
                 cout << "Nemate dostatek zlata!" << endl;
