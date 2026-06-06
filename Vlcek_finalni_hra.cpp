@@ -105,7 +105,7 @@ cout << "-=-=-=-=-=-VITEJ VE HRE-=-=-=-=-=-" << endl;
 while (!vyber){
 cout << "Za jakou tridu budete chtit hrat? (Paladin, Lovec, Mag, Warlock): ";
 cin >> classa;
-cout << endl;
+cout << "----------------------" << endl;
 
 
 if (classa == "Paladin"){
