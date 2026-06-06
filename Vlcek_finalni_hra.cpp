@@ -111,7 +111,7 @@ cout << endl;
 
 // Monstrum
 void M(){
-int maxzivotyMonstra
+int maxzivotyMonstra = 100;
 int zivotyMonstra = 100;
 int utokMonstra = 5;
 cout << "----------------------" << endl;
@@ -122,7 +122,8 @@ cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << 
 cout << classa << ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
 cout << "Monstrum: Cha! Tak si to rozdame." << endl;
 
-while (zivoty > 0 or zivotyMonstra > 0){
+while (zivoty > 0 && zivotyMonstra > 0){
+    utokMonstra = 5;
     cout << "----------------------" << endl;
     cout << "Zivoty Monstra: " << zivotyMonstra << "/" << zivotyMonstra << endl;
     cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
@@ -138,17 +139,49 @@ while (zivoty > 0 or zivotyMonstra > 0){
         cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
         cout << "----------------------" << endl;
-        cout << "Monstrum se na vas nahnalo" << endl;
-        cout << "1) Zautocite na monstrum (25% sance ze se utok na monstrum podari)";
-        cout << "2) Uhnete (50% sance ze se uhnuti pred monstrem podari)";
+        cout << "Monstrum se na vas vrhnulo, co udelate?" << endl;
+        cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)";
+        cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)";
         cout << "Vase volba: ";
         cin >> volba;
+        if (volba == 1){
+            if (rand() % 100 < 50){
+                cout << "Monstrum se netrefilo" << endl;
+            }else{
+                cout << "Zasahli jste monstrum" << endl;
+                zivotyMonstra -= utok;
+            }
+        }
+    }else if (volba == 2){
+        cout << "Monstrum se netrefilo" << endl;
+        cout << "----------------------" << endl;
+        cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase Zivoty: " << zivoty << "/" << zivotyMonstra << endl;
+        cout << "----------------------" << endl;
+        cout << "Monstrum se na vas vrhnulo, co udelate?" << endl;
+        cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)";
+        cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)";
+        cout << "Vase volba: ";
+        cin >> volba;
+        if (volba == 1){
+            if (rand() % 100 < 70){
+                cout << "" << endl;
+                utokMonstra *= 2;
+            }else{
+                if (rand() % 100 < 40){
+                cout << "Monstrum se trefilo" << endl;
+                zivoty -= utokMonstra;
+            }
+        }else if (volba == 2){
+            cout << "Monstrum vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
+        }else{
+        cout << "neplatny vstup, zadejte volbu znovu" << endl;
+        cin >> volba;
     }
-    if (volba == 2){
-        cout << "Monstrum vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
-        utokMonstra *= 2;
-    }
-}
+}else{
+    cout << "neplatny vstup, zadejte volbu znovu" << endl;
+    cin >> volba;
+} } }
 }
 // ------------------------------------------------------------------
 
@@ -250,6 +283,11 @@ if (classa == "Paladin"){
     }
 }
 
+while(true){
+    if (zivoty =< 0){
+        cout << "Prohral jste..." << endl;
+    }
+}
 
 V();
 M();
