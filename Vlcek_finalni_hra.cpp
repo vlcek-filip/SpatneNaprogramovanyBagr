@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 using namespace std;
 
@@ -16,7 +17,8 @@ string pokracakce;
 
 
 // VESNICE
-Void V(){
+void V(){
+while(true){
 cout << endl;
 cout << "----------------------" << endl;
 cout << "Lokace: Vesnice" << endl;
@@ -32,114 +34,69 @@ cin >> akce;
 cout << endl;
 
 
-if (akce == 1){
-    cout << "Tato akce stoji 5 zlata, chcete pokracovat?: ";
-    cin >> pokracakce;
-    if (pokracakce == "ano"){
-        if (zlato >= 5){
-                zlato = zlato - 5;
-                cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 5){
-            akce = 0;
-            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou akci chcete vykonat?: ";
-            cin >> akce;
+
+    if(akce == 1){
+        if(zlato >= 5){
+            cout << "Tato akce stoji 5 zlata, chcete pokracovat? (ano/ne): ";
+            cin >> pokracakce;
+            if(pokracakce == "ano"){
+                zlato -= 5;
+                cout << "Zivoty doplneny. Nyni mate " << zlato << " zlata." << endl;
+                }
+            }else{
+                cout << "Nemate dostatek zlata!" << endl;
+            }
         }
-    }else{
-        cout << "Jakou akci chcete vykonat?: ";
-        cin >> akce;
+
+    else if(akce == 2){
+        if(zlato >= 10){
+            cout << "Tato akce stoji 10 zlata, chcete pokracovat? (ano/ne): ";
+            cin >> pokracakce;
+            if(pokracakce == "ano"){
+                zlato -= 10;
+                cout << "Max. zivoty zvyseny. Nyni mate " << zlato << " zlata." << endl;
+                }
+            }else{
+                cout << "Nemate dostatek zlata!" << endl;
+            }
+        }
+
+    else if(akce == 3){
+        if(zlato >= 20){
+            cout << "Tato akce stoji 20 zlata, chcete pokracovat? (ano/ne): ";
+            cin >> pokracakce;
+            if(pokracakce == "ano"){
+                zlato -= 20;
+                cout << "Max. mana zvysena. Nyni mate " << zlato << " zlata." << endl;
+                }
+            }else{
+                cout << "Nemate dostatek zlata!" << endl;
+            }
+        }
+
+    else if(akce == 4){
+        if(zlato >= 10){
+            cout << "Tato akce stoji 10 zlata, chcete pokracovat? (ano/ne): ";
+            cin >> pokracakce;
+            if(pokracakce == "ano"){
+                zlato -= 10;
+                cout << "Utok vylepsen. Nyni mate " << zlato << " zlata." << endl;
+                }
+            }else{
+                cout << "Nemate dostatek zlata!" << endl;
+            }
+        }
+
+    else if(akce == 5){
+        cout << "Opousteni vesnice..." << endl;
+        cout << "----------------------" << endl;
+        return;
     }
-}else if (akce == 2){
-    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
-    cin >> pokracakce;
-    if (pokracakce == "ano"){
-        if (zlato >= 10){
-                zlato = zlato - 10;
-                cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 10){
-            akce = 0;
-            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou akci chcete vykonat?: ";
-            cin >> akce;
+    else{
+        cout << "Neplatna volba, vyberte prosim znovu." << endl;
         }
-    }else{
-        cout << "Jakou akci chcete vykonat?: ";
-        cin >> akce;
-    }
-}else if (akce == 3){
-    cout << "Tato akce stoji 20 zlata, chcete pokracovat?: ";
-    cin >> pokracakce;
-    if (pokracakce == "ano"){
-        if (zlato >= 20){
-                zlato = zlato - 20;
-                cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 20){
-            akce = 0;
-            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou akci chcete vykonat?: ";
-            cin >> akce;
-        }
-    }else{
-        cout << "Jakou akci chcete vykonat?: ";
-        cin >> akce;
-    }
-}else if (akce == 4){
-    cout << "Tato akce stoji 10 zlata, chcete pokracovat?: ";
-    cin >> pokracakce;
-    if (pokracakce == "ano"){
-        if (zlato >= 10){
-                zlato = zlato - 10;
-                cout << "Nyni mate " << " zlata" << endl;
-        }else if (zlato < 10){
-            akce = 0;
-            cout << "Nemate dostatek zlata na vykonani teto akce" << endl;
-            cout << "Jakou akci chcete vykonat?: ";
-            cin >> akce;
-        }
-    }else{
-        cout << "Jakou akci chcete vykonat?: ";
-        cin >> akce;
     }
 }
-cout << "----------------------" << endl;
-}
-
-// ------------------------------------------------------------------
-
-// MONSTRUM
-void M(){
-
-}
-
-// ------------------------------------------------------------------
-
-// MONSTRUM 2x
-void 2xM(){
-
-}
-
-// ------------------------------------------------------------------
-
-// MOSTRUM 3x
-void 3xM(){
-
-}
-
-// ------------------------------------------------------------------
-
-// MINIBOSS
-void MB(){
-
-}
-
-// ------------------------------------------------------------------
-
-// HLAVNIBOSS
-void HB(){
-
-}
-
-// ------------------------------------------------------------------
 
 int main(){
 
