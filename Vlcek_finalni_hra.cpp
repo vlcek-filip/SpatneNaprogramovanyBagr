@@ -226,6 +226,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
     if (zivoty > 0){
         cout << "Porazil jste monstrum!" << endl;
         cout << endl;
+        int ziskaneZlato = rand() % (5 + 1) + 3;
+        zlato += ziskanezlato;
         cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
         cout << endl;
         return;
