@@ -212,10 +212,19 @@ while (zivoty > 0 && zivotyMonstra > 0){
             }else{
                 cout << "Monstrum Vas zasahlo" << endl;
                 zivoty -= utokMonstra;
-                if (zivoty <= 0){
+                if (zivotyMonstra <= 0){
+                    cout << "Porazil jste monstrum!" << endl;
+                    cout << endl;
+                    int ziskaneZlato = rand() % (5 + 1) + 3;
+                    zlato += ziskaneZlato;
+                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
+                    cout << endl;
+                    return;
+            if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
+} 
             }
         }
         }else if (volba == 2){
@@ -224,7 +233,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "neplatny vstup, zadejte volbu znovu" << endl;
     cin >> volba;
 } }
-    if (zivoty > 0){
+    if (zivotyMonstra <= 0){
         cout << "Porazil jste monstrum!" << endl;
         cout << endl;
         int ziskaneZlato = rand() % (5 + 1) + 3;
