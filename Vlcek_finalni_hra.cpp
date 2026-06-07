@@ -101,6 +101,7 @@ cout << endl;
     else if(akce == 5){
         cout << "Opousteni vesnice..." << endl;
         cout << "----------------------" << endl;
+        cout << endl;
         return;
     }
     else{
@@ -115,6 +116,7 @@ void M(){
 int maxzivotyMonstra = 4;
 int zivotyMonstra = 4;
 int utokMonstra = 2;
+cout << endl;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
 cout << "Utok Monstra: -2 zivoty" << endl;
@@ -146,12 +148,14 @@ while (zivoty > 0 && zivotyMonstra > 0){
     if (volba == 1){
         cout << "Utok monstru ubral " << utok << " zivotu" << endl;
         zivotyMonstra -= utok;
+        cout << endl;
         cout << "----------------------" << endl;
         cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase Zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra <= 0){
             cout << "Monstrum bylo porazeno" << endl;
+            cout << endl;
             return;
         }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
@@ -205,8 +209,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas minulo" << endl;
                 utokMonstra *= 2;
             }else{
-                if (rand() % 100 < 30){
-                cout << "Monstrum se trefilo" << endl;
+                cout << "Monstrum Vas zasahlo" << endl;
                 zivoty -= utokMonstra;
                 if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
@@ -219,7 +222,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
 }else{
     cout << "neplatny vstup, zadejte volbu znovu" << endl;
     cin >> volba;
-} } }
+} }
     if (zivoty > 0){
         cout << "Porazil jste monstrum!" << endl;
         return;
