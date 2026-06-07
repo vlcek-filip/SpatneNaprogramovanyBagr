@@ -119,7 +119,7 @@ int utokMonstra = 2;
 cout << endl;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
-cout << "Utok Monstra: -2 zivoty" << endl;
+cout << "Utok monstra: -2 zivoty" << endl;
 cout << "----------------------" << endl;
 cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << endl;
 cout << classa << ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
@@ -132,8 +132,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
     zivoty -= utokMonstra;
     cout << endl;
     cout << "----------------------" << endl;
-    cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
-    cout << "Vase Zivoty: " << zivoty << "/" << maxzivoty << endl;
+    cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+    cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
     cout << "----------------------" << endl;
             if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
@@ -150,8 +150,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
         zivotyMonstra -= utok;
         cout << endl;
         cout << "----------------------" << endl;
-        cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
-        cout << "Vase Zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra <= 0){
             cout << "Monstrum bylo porazeno" << endl;
@@ -187,8 +187,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
     }else if (volba == 2){
         cout << "Monstrum se netrefilo" << endl;
         cout << "----------------------" << endl;
-        cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
-        cout << "Vase Zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra <= 0){
             cout << "Monstrum bylo porazeno" << endl;
@@ -225,6 +225,9 @@ while (zivoty > 0 && zivotyMonstra > 0){
 } }
     if (zivoty > 0){
         cout << "Porazil jste monstrum!" << endl;
+        cout << endl;
+        cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
+        cout << endl;
         return;
     if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
