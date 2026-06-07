@@ -43,6 +43,7 @@ cout << endl;
             cin >> pokracakce;
             if(pokracakce == "ano"){
                 zlato -= 5;
+                zivoty = maxzivoty;
                 cout << "Zivoty doplneny. Nyni mate " << zlato << " zlata." << endl;
                 cout << "Zivoty: " << zivoty << "/" << zivoty;
                 }
@@ -52,13 +53,13 @@ cout << endl;
         }
 
     else if(akce == 2){
-        if(zlato >= 10){
-            cout << "Tato akce stoji 10 zlata, chcete pokracovat? (ano/ne): ";
+        if(zlato >= 15){
+            cout << "Tato akce stoji 15 zlata, chcete pokracovat? (ano/ne): ";
             cin >> pokracakce;
             if(pokracakce == "ano"){
-                zlato -= 10;
+                zlato -= 15;
                 cout << "Max. zivoty zvyseny. Nyni mate " << zlato << " zlata." << endl;
-                int bonus = rand() % 9 + 1;
+                int bonus = rand() % 4 + 1;
                 maxzivoty += bonus;
                 cout << "Zivoty: " << zivoty << "/" << maxzivoty;
                 }
@@ -74,8 +75,9 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 20;
                 cout << "Max. mana zvysena. Nyni mate " << zlato << " zlata." << endl;
-                int bonus = rand() % 9 + 1;
+                int bonus = rand() % 3 + 1;
                 maxmana += bonus;
+                cout << "Vase maximalni mana je: " << maxmana << endl;
                 }
             }else{
                 cout << "Nemate dostatek zlata!" << endl;
@@ -89,7 +91,7 @@ cout << endl;
             if(pokracakce == "ano"){
                 zlato -= 10;
                 cout << "Utok vylepsen. Nyni mate " << zlato << " zlata." << endl;
-                int bonus = rand() % 9 + 1;
+                int bonus = rand() % 2 + 1;
                 utok += bonus;
                 cout << "Poskozeni utokem: " << utok << endl;
                 }
@@ -116,7 +118,6 @@ void M(){
 int maxzivotyMonstra = 4;
 int zivotyMonstra = 4;
 int utokMonstra = 2;
-cout << endl;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
 cout << "Utok monstra: -2 zivoty" << endl;
@@ -227,7 +228,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Porazil jste monstrum!" << endl;
         cout << endl;
         int ziskaneZlato = rand() % (5 + 1) + 3;
-        zlato += ziskanezlato;
+        zlato += ziskaneZlato;
         cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
         cout << endl;
         return;
