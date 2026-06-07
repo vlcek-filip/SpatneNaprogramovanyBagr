@@ -123,10 +123,12 @@ cout << "Monstrum: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << 
 cout << classa << ": Nevim co si myslis ze jsi, dam te levou zadni." << endl;
 cout << "Monstrum: Cha! Tak si to rozdame." << endl;
 cout << "----------------------" << endl;
+cout << endl;
 
 while (zivoty > 0 && zivotyMonstra > 0){
     cout << "Monstrum Vam zasadilo zasah" << endl;
     zivoty -= utokMonstra;
+    cout << endl;
     cout << "----------------------" << endl;
     cout << "Zivoty Monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
     cout << "Vase Zivoty: " << zivoty << "/" << maxzivoty << endl;
