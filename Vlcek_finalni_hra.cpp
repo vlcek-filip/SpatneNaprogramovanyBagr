@@ -880,9 +880,11 @@ while (zivoty > 0 && zivotyMonstra > 0){
 
 // Hlavni Boss
 void HB(){
-int maxzivotyMonstra = 25;
-int zivotyMonstra = 25;
-int utokMonstra = 6;
+int maxzivotyMonstra = 34;
+int zivotyMonstra = 34;
+int utokMonstra = 4;
+int attackCounter = 1;
+int defaultutokMonstra = 4;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
 cout << "Utok monstra: -" << utokMonstra << "HP" << endl;
@@ -913,7 +915,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
             if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
-            }
+            } }
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
@@ -942,16 +944,52 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 exit(0);
             }
         }
+        }else if (volba == 2){
+        defaultutokMonstra = utokMonstra;
+        cout << "Monstrum Vas minulo, ale damage counter byl navyseny" << endl;
+        attackCounter++;
+        cout << "----------------------" << endl;
+        cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
+        cout << "----------------------" << endl;
+        if (zivotyMonstra < 1){
+            cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
+            cout << endl;
+            int ziskaneZlato = rand() % (5 + 1) + 3;
+            zlato += ziskaneZlato;
+            cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
+            cout << endl;
+            if (zivoty <= 0){
+                cout << "Monstrum Vas porazilo" << endl;
+                exit(0);
+            }
+        }
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty;
+        cout << "Vas charakter byl vylecen" << endl;
+        cout << "----------------------" << endl;
+        cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
+        cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
+        cout << "----------------------" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        } }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
-        cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "2) Uhnete" << endl;
         cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
         if (volba == 1){
             if (rand() % 100 < 50){
+                utokMonstra = defaultutokMonstra * attackCounter
                 cout << "Monstrum Vas zasahlo" << endl;
+                zivoty -= utokMonstra;
                 if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
@@ -973,24 +1011,34 @@ while (zivoty > 0 && zivotyMonstra > 0){
             }
         } }
     }else if (volba == 2){
-        cout << "Monstrum Vas minulo" << endl;
+        defaultutokMonstra = utokMonstra;
+        cout << "Monstrum Vas minulo, ale damage counter byl navyseny" << endl;
+        attackCounter++;
         cout << "----------------------" << endl;
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra < 1){
-                    cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
+            cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
+            cout << endl;
+            int ziskaneZlato = rand() % (5 + 1) + 3;
+            zlato += ziskaneZlato;
+            cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
+            cout << endl;
             if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
         }
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty;
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        } }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
@@ -1019,8 +1067,10 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }
             }
         }else if (volba == 2){
-            cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
-            utokMonstra *= 2;
+            defaultutokMonstra = utokMonstra;
+            cout << "Monstrum Vas minulo, ale damage counter byl navyseny" << endl;
+            attackCounter++;
+            cout << "----------------------" << endl;
     }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
@@ -1029,17 +1079,10 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
         }
-    }else{
-    cout << "neplatny vstup, zadejte volbu znovu" << endl;
-    cin >> volba;
-} }else if (volba == 3){
-        if (mana > 1){
-        mana -= 2;
-        zivoty = maxzivoty;
-        cout << "Vas charakter byl vylecen" << endl;
-        }else if (mana < 2){
-            cout << "Nemate dostatek many." << endl;
-        } } }
+        }else{
+            cout << "neplatny vstup, zadejte volbu znovu" << endl;
+            cin >> volba;
+    }
     if (zivotyMonstra < 1){
                     cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
                     cout << endl;
@@ -1052,7 +1095,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 exit(0);
             }
         }
-} } }
+} }
 // ------------------------------------------------------------------
 
 
