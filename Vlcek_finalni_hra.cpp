@@ -324,6 +324,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
     cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
     cout << "Utok monstra2: -" << utokMonstra2 << "HP" << endl;
     cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+    cout << "Vase mana: " << mana << "/" << maxmana << endl;
     cout << "----------------------" << endl;
             if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
@@ -351,6 +352,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
         cout << "Utok monstra2: -" << utokMonstra2 << "HP" << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra1 <= 0 && zivotyMonstra2 <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -399,6 +401,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
             cout << "Zivoty monstra 1: " << zivotyMonstra1 << "/" << maxzivotyMonstra1 << endl;
             cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
             cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+            cout << "Vase mana: " << mana << "/" << maxmana << endl;
             cout << "----------------------" << endl;
         }else if (volba == 3){
         if (mana > 1){
@@ -415,6 +418,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         cout << "Zivoty monstra 1: " << zivotyMonstra1 << "/" << maxzivotyMonstra1 << endl;
         cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra1 <= 0 && zivotyMonstra2 <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -507,6 +511,7 @@ cout << "Utok monstra2: -" << utokMonstra2 << "HP" << endl;
 cout << "Zivoty monstra 3: " << zivotyMonstra3 << "/" << maxzivotyMonstra3 << endl;
 cout << "Utok monstra3: -" << utokMonstra3 << "HP" << endl;
 cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+cout << "Vase mana: " << mana << "/" << maxmana << endl;
 cout << "----------------------" << endl;
 cout << "Monstrum 1: co tu chces?! Znicim te jestli se do 5 vterin neztratis!" << endl;
 cout << classa << ": Nevim co si myslite ze jste, dam Vas levou zadni." << endl;
@@ -542,6 +547,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
     cout << "Zivoty monstra 3: " << zivotyMonstra3 << "/" << maxzivotyMonstra3 << endl;
     cout << "Utok monstra3: -" << utokMonstra3 << "HP" << endl;
     cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+    cout << "Vase mana: " << mana << "/" << maxmana << endl;
     cout << "----------------------" << endl;
 
     cout << "Monstrum Vam zasadilo zasah" << endl;
@@ -575,6 +581,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
         cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
         cout << "Zivoty monstra 3: " << zivotyMonstra3 << "/" << maxzivotyMonstra3 << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra1 <= 0 && zivotyMonstra2 <= 0 && zivotyMonstra3 <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -625,6 +632,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
             cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
             cout << "Zivoty monstra 3: " << zivotyMonstra3 << "/" << maxzivotyMonstra3 << endl;
             cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+            cout << "Vase mana: " << mana << "/" << maxmana << endl;
             cout << "----------------------" << endl;
         }
     }else if (volba == 2){
@@ -634,6 +642,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
         cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
         cout << "Zivoty monstra 3: " << zivotyMonstra3 << "/" << maxzivotyMonstra3 << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra1 <= 0 && zivotyMonstra2 <= 0 && zivotyMonstra3 <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -718,6 +727,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "----------------------" << endl;
     cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
     cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+    cout << "Vase mana: " << mana << "/" << maxmana << endl;
     cout << "----------------------" << endl;
             if (zivoty <= 0){
                 cout << "Monstrum Vas porazilo" << endl;
@@ -737,6 +747,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "----------------------" << endl;
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -786,6 +797,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "----------------------" << endl;
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -888,6 +900,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "----------------------" << endl;
     cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
     cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+    cout << "Vase mana: " << mana << "/" << maxmana << endl;
     cout << "----------------------" << endl;
             if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
@@ -915,6 +928,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "----------------------" << endl;
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra < 1){
                     cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
@@ -963,6 +977,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "----------------------" << endl;
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
+        cout << "Vase mana: " << mana << "/" << maxmana << endl;
         cout << "----------------------" << endl;
         if (zivotyMonstra < 1){
                     cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
