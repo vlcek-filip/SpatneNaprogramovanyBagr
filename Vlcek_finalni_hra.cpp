@@ -651,9 +651,9 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
 
 // Mini Boss
 void MB(){
-int maxzivotyMonstra = 4;
-int zivotyMonstra = 4;
-int utokMonstra = 2;
+int maxzivotyMonstra = 15;
+int zivotyMonstra = 15;
+int utokMonstra = 4;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
 cout << "Utok monstra: -" << utokMonstra << "HP" << endl;
