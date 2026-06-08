@@ -840,7 +840,15 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }else{
             cout << "neplatny vstup, zadejte volbu znovu" << endl;
             cin >> volba;
-} } }
+} }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        }
+    }
     if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
                     cout << endl;
@@ -853,8 +861,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-}
-}
+} } } }
 // ------------------------------------------------------------------
 
 // Hlavni Boss
@@ -895,6 +902,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
+    cout << "3) Vylecit (stoji 2 many)" << endl;
     cout << "Vase volba: ";
     cin >> volba;
     cout << endl;
@@ -995,7 +1003,15 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }else if (volba == 2){
             cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
             utokMonstra *= 2;
-}else{
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        }
+    }else{
     cout << "neplatny vstup, zadejte volbu znovu" << endl;
     cin >> volba;
 } } }
@@ -1096,6 +1112,8 @@ while (zivoty > 0){
     M();
     V();
     M2x();
+    V();
+    M();
     V();
     M3x();
     V();
