@@ -848,8 +848,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "----------------------" << endl;
-        if (zivotyMonstra1 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
+        if (zivotyMonstra < 1){
+                    cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
                     cout << endl;
                     int ziskaneZlato = rand() % (5 + 1) + 3;
                     zlato += ziskaneZlato;
@@ -859,28 +859,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-        }else if (zivotyMonstra2 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            }
-        }else if (zivotyMonstra3 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            } }
+        }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
@@ -916,8 +895,8 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Zivoty monstra: " << zivotyMonstra << "/" << maxzivotyMonstra << endl;
         cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
         cout << "----------------------" << endl;
-        if (zivotyMonstra1 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
+        if (zivotyMonstra < 1){
+                    cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
                     cout << endl;
                     int ziskaneZlato = rand() % (5 + 1) + 3;
                     zlato += ziskaneZlato;
@@ -927,28 +906,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-        }else if (zivotyMonstra2 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            }
-        }else if (zivotyMonstra3 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            } }
+        }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
@@ -965,7 +923,15 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 if (zivotyMonstra1 < 1){
                     cout << "Porazil jste monstrum!" << endl;
                     cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
+                    int ziskaneZlato = rand() % (10 + 1) + 3;
+                    zlato += ziskaneZlato;
+                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
+                    cout << endl;
+            }
+        }else if (zivotyMonstra1 < 1){
+                    cout << "Porazil jste monstrum!" << endl;
+                    cout << endl;
+                    int ziskaneZlato = rand() % (10 + 1) + 3;
                     zlato += ziskaneZlato;
                     cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
                     cout << endl;
@@ -973,28 +939,6 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-        }else if (zivotyMonstra2 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            }
-        }else if (zivotyMonstra3 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            } }
             }
         }
         }else if (volba == 2){
@@ -1006,7 +950,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     if (zivotyMonstra1 < 1){
                     cout << "Porazil jste monstrum!" << endl;
                     cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
+                    int ziskaneZlato = rand() % (10 + 1) + 3;
                     zlato += ziskaneZlato;
                     cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
                     cout << endl;
@@ -1014,29 +958,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-        }else if (zivotyMonstra2 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            }
-        }else if (zivotyMonstra3 < 1){
-                    cout << "Porazil jste monstrum!" << endl;
-                    cout << endl;
-                    int ziskaneZlato = rand() % (5 + 1) + 3;
-                    zlato += ziskaneZlato;
-                    cout << "Za porazeni monstra jste ziskal " << zlato << " zlata." << endl;
-                    cout << endl;
-            if (zivoty <= 0){
-                cout << "Monstrum Vas porazilo" << endl;
-                exit(0);
-            } }
-} 
+}
 }
 // ------------------------------------------------------------------
 
@@ -1115,10 +1037,20 @@ if (classa == "Paladin"){
 }
 
 while(zivoty > 0){
-    V();
     M();
     V();
+    M2x();
+    V();
+    M3x();
+    V();
     M();
+    MB();
+    V();
+    M2x();
+    M3x();
+    V();
+    HB();
+    return 0;
 }
 
 
