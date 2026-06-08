@@ -976,6 +976,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -999,7 +1000,6 @@ while (zivoty > 0 && zivotyMonstra > 0){
             }
         }
             }
-        }
         }else if (volba == 2){
             cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
             utokMonstra *= 2;
@@ -1027,7 +1027,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 exit(0);
             }
         }
-} }
+} } }
 // ------------------------------------------------------------------
 
 
