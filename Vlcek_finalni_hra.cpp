@@ -1017,7 +1017,14 @@ while (zivoty > 0 && zivotyMonstra > 0){
     }else{
     cout << "neplatny vstup, zadejte volbu znovu" << endl;
     cin >> volba;
-} } }
+} }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty;
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        } } }
     if (zivotyMonstra < 1){
                     cout << "Porazil jste Hlavniho bosse, gratuluji!" << endl;
                     cout << endl;
