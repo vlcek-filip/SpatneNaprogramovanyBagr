@@ -143,6 +143,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
+    cout << "3) Vylecit (stoji 2 many)" << endl;
     cout << "Vase volba: ";
     cin >> volba;
     cout << endl;
@@ -169,10 +170,19 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }
     }else if (volba == 2){
         cout << "Monstrum Vas minulo" << endl;
-    }
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        }
+    } }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -220,6 +230,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -247,10 +258,18 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }
         }else if (volba == 2){
             cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
-}else{
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        }
+    }else{
     cout << "neplatny vstup, zadejte volbu znovu" << endl;
     cin >> volba;
-} } }
+}
     if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
                     cout << endl;
@@ -313,6 +332,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
+    cout << "3) Vylecit (stoji 2 many)" << endl;
     cout << "Vase volba: ";
     cin >> volba;
     cout << endl;
@@ -344,6 +364,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -379,7 +400,15 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
             cout << "Zivoty monstra 2: " << zivotyMonstra2 << "/" << maxzivotyMonstra2 << endl;
             cout << "Vase zivoty: " << zivoty << "/" << maxzivoty << endl;
             cout << "----------------------" << endl;
+        }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
         }
+    }
     }else if (volba == 2){
         cout << "Monstrum Vas minulo" << endl;
         cout << "----------------------" << endl;
@@ -399,6 +428,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -428,6 +458,13 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
             cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
             utokMonstra1 *= 2;
             utokMonstra2 *= 2;
+        }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
         }
     }else{
         cout << "neplatny vstup, zadejte volbu znovu" << endl;
@@ -447,7 +484,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         cout << "Monstrum Vas porazilo" << endl;
         exit(0);
     }
-}
+} }
 // ------------------------------------------------------------------
 
 // 3xMonstrum
@@ -517,6 +554,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
+    cout << "3) Vylecit (stoji 2 many)" << endl;
     cout << "Vase volba: ";
     cin >> volba;
     cout << endl;
@@ -641,6 +679,14 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
             utokMonstra2 *= 2;
             utokMonstra3 *= 2;
         }
+    }else if (volba == 3){
+        if (mana > 1){
+        mana -= 2;
+        zivoty = maxzivoty
+        cout << "Vas charakter byl vylecen" << endl;
+        }else if (mana < 2){
+            cout << "Nemate dostatek many." << endl;
+        }
     }else{
         cout << "neplatny vstup, zadejte volbu znovu" << endl;
         cin >> volba;
@@ -679,6 +725,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     cout << "Monstrum Vam chce zasadit zasah, co udelate?" << endl;
     cout << "1) Zautocite na monstrum" << endl;
     cout << "2) Uhnete (monstrum si nabije utok, ktery dava 2x vice poskozeni)" << endl;
+    cout << "3) Vylecit (stoji 2 many)" << endl;
     cout << "Vase volba: ";
     cin >> volba;
     cout << endl;
@@ -706,6 +753,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -753,6 +801,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -777,12 +826,20 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 }
             }
             }
-        }
         }else if (volba == 2){
             cout << "Monstrum Vas minulo, ale nabilo si utok, ktery vam da 2x vice poskozeni." << endl;
-}else{
-    cout << "neplatny vstup, zadejte volbu znovu" << endl;
-    cin >> volba;
+            utokMonstra *= 2;
+        }else if (volba == 3){
+            if (mana > 1){
+                mana -= 2;
+                zivoty = maxzivoty
+                cout << "Vas charakter byl vylecen" << endl;
+                }else if (mana < 2){
+                    cout << "Nemate dostatek many." << endl;
+                }
+        }else{
+            cout << "neplatny vstup, zadejte volbu znovu" << endl;
+            cin >> volba;
 } } }
     if (zivotyMonstra <= 0){
                     cout << "Porazil jste monstrum!" << endl;
