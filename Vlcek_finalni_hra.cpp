@@ -173,7 +173,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -261,7 +261,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -403,7 +403,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -461,7 +461,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0)){
         }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -682,7 +682,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
     }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -699,6 +699,7 @@ while (zivoty > 0 && (zivotyMonstra1 > 0 || zivotyMonstra2 > 0 || zivotyMonstra3
 void MB(){
 int maxzivotyMonstra = 15;
 int zivotyMonstra = 15;
+int puvodutokMonstra = 4;
 int utokMonstra = 4;
 cout << "----------------------" << endl;
 cout << "Lokace: Souboj s monstrem" << endl;
@@ -798,6 +799,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             } }
+    }
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (30% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (60% sance ze se uhnuti pred monstrem podari)" << endl;
@@ -832,7 +834,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         }else if (volba == 3){
             if (mana > 1){
                 mana -= 2;
-                zivoty = maxzivoty
+                zivoty = maxzivoty;
                 cout << "Vas charakter byl vylecen" << endl;
                 }else if (mana < 2){
                     cout << "Nemate dostatek many." << endl;
@@ -843,7 +845,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
 } }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
@@ -861,7 +863,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
                 cout << "Monstrum Vas porazilo" << endl;
                 exit(0);
             }
-} } } }
+} } }
 // ------------------------------------------------------------------
 
 // Hlavni Boss
@@ -929,6 +931,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
         cout << "Monstrum se na Vas vrhnulo, co udelate?" << endl;
         cout << "1) Zautocite na monstrum (50% sance ze se utok na monstrum podari)" << endl;
         cout << "2) Uhnete (75% sance ze se uhnuti pred monstrem podari)" << endl;
+        cout << "3) Vylecit (stoji 2 many)" << endl;
         cout << "Vase volba: ";
         cin >> volba;
         cout << endl;
@@ -1006,7 +1009,7 @@ while (zivoty > 0 && zivotyMonstra > 0){
     }else if (volba == 3){
         if (mana > 1){
         mana -= 2;
-        zivoty = maxzivoty
+        zivoty = maxzivoty;
         cout << "Vas charakter byl vylecen" << endl;
         }else if (mana < 2){
             cout << "Nemate dostatek many." << endl;
